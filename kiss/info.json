@@ -1,0 +1,9 @@
+{
+    "AUTHOR" : "OKE PlazmA",
+    "INSTALL_MSG" : "Thanks for installing my cog. \n.help Kiss to start using the cog.",
+    "NAME" : "kiss",
+    "SHORT" : "Kiss people.",
+    "REQUIREMENTS" : ["Pillow"],
+    "TAGS" : ["Social"],
+    "DESCRIPTION" : "You are able to kiss people."
+}
