@@ -1,1 +1,9 @@
-Ok so, this file is completely un-needed unless you are trying to install this using .cog install because this is the only way i can get it to work, sorry if this inconveniences you - PlazmA
+{
+    "AUTHOR" : "OKE PlazmA",
+    "INSTALL_MSG" : "Thanks for installing my cog. \n.help Kiss to start using the cog.",
+    "NAME" : "kiss",
+    "SHORT" : "Kiss people.",
+    "REQUIREMENTS" : ["Pillow"],
+    "TAGS" : ["Social"],
+    "DESCRIPTION" : "You are able to kiss people."
+}
