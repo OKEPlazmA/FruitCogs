@@ -1,0 +1,9 @@
+
+{
+    "AUTHOR" : "OKE PlazmA",
+    "SHORT" : "Onjoin",
+    "DESCRIPTION" : "The message displayed when you bot joins a server.",
+    "DISABLED" : false,
+    "NAME" : "onjoin",
+    "INSTALL_MSG" : "Thank you for installing my cog :smile:!"
+}
