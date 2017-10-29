@@ -7,7 +7,7 @@ class Pat:
         self.bot = bot
 
     @commands.command(pass_context=True)
-    async def hug(self, context, member: discord.Member):
+    async def pat(self, context, member: discord.Member):
         """Pat People!"""
         author = context.message.author.mention
         mention = member.mention
