@@ -18,7 +18,7 @@ class Hug:
         
         image = random.choice(choices)
         
-        embed = discord.Embed(description=hug.format(author, mention), colour=discord.Colour.gold())
+        embed = discord.Embed(description=hug.format(author, mention), colour=discord.Colour.blue())
         embed.set_image(url=image)
 
         await self.bot.say(embed=embed)
