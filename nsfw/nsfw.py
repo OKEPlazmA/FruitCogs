@@ -32,7 +32,7 @@ DEFAULT = {"nsfw_channels": ["133251234164375552"], "invert" : False, "nsfw_msg"
 #example: "/butts/vote/6202/minus/" - negative vote for butts with id 6202; vote for noise: "/noise/vote/{id=0}/{operation=plus;[plus,minus]}/",
 #example: "/noise/vote/57/minus/" - negative vote for noise with id 57;
 
-class nsfw:
+class Nsfw:
     """An NSFW cog made so you don't have to corrupt your search history!"""
 
     def __init__(self, bot):
@@ -264,5 +264,5 @@ def check_files():
 def setup(bot):
     check_folders()
     check_files()
-    bot.add_cog(nsfw(bot))
-    bot.loop.create_task(nsfw.boob_knowlegde())
+    bot.add_cog(Nsfw(bot))
+    bot.loop.create_task(Nsfw.boob_knowlegde())
