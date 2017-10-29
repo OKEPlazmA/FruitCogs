@@ -240,7 +240,7 @@ class Nsfw:
 
 def check_folders():
     if not os.path.exists(DIR_DATA):
-        print("Creating data/oboobs folder...")
+        print("Creating data/nsfw folder...")
         os.makedirs(DIR_DATA)
 
 def check_files():
@@ -265,4 +265,4 @@ def setup(bot):
     check_folders()
     check_files()
     bot.add_cog(nsfw(bot))
-    bot.loop.create_task(oboobs.boob_knowlegde())
+    bot.loop.create_task(nsfw.boob_knowlegde())
