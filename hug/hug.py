@@ -16,7 +16,7 @@ class Hug:
         self.bot = bot
 
     @commands.command(pass_context=True)
-    async def hug(self, context, member: discord.Member):
+    async def hug(self, context, int, member: discord.Member):
         """Hug People!"""
         author = context.message.author.mention
         mention = member.mention
