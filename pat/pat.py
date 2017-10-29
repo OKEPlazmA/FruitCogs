@@ -43,5 +43,5 @@ class Pat:
         await self.bot.say(embed=embed)
 
 def setup(bot):
-    n = Hug(bot)
+    n = Pat(bot)
     bot.add_cog(n)
