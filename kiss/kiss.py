@@ -42,5 +42,5 @@ class Kiss:
         await self.bot.say(embed=embed)
 
 def setup(bot):
-    n = Hug(bot)
+    n = Kiss(bot)
     bot.add_cog(n)
