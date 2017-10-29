@@ -1,11 +1,20 @@
-import discord
 from discord.ext import commands
-from random import choice as rndchoice
-from .utils.dataIO import fileIO
-from .utils import checks
-import os
+import random
+import discord
 
-kisslist = [
+class Kiss:
+    def __init__(self, bot):
+        self.bot = bot
+
+    @commands.command(pass_context=True)
+    async def kiss(self, context, member: discord.Member):
+        """Kiss People!"""
+        author = context.message.author.mention
+        mention = member.mention
+        
+        hug = "**{0} kissed {1}!**"
+        
+        choices = [
     "https://i.imgur.com/II1bakc.gif",
     "https://i.imgur.com/MzAjNdv.gif",
     "https://i.imgur.com/eKcWCgS.gif",
@@ -24,18 +33,14 @@ kisslist = [
     "https://i.imgur.com/KSiA3Ws.gif",
     "https://i.imgur.com/nVM7Ll8.gif",
     "https://i.imgur.com/glTzPMZ.gif"]
+        
+        image = random.choice(choices)
+        
+        embed = discord.Embed(description=hug.format(author, mention), colour=0xffa500())
+        embed.set_image(url=image)
 
-class Social:
-    """Kiss"""
-
-    @commands.command()
-    async def kiss(self):
-
-        kissed = random.choice(kisslist)
-        kissimg = discord.Embed(description="Here is your meme!", color=0x0f8a6e)
-        kissimg.set_image(url=kissed)
-        await self.bot.say(embed=kissimg)
-
+        await self.bot.say(embed=embed)
 
 def setup(bot):
-    bot.add_cog(Kiss(bot))
+    n = Hug(bot)
+    bot.add_cog(n)
