@@ -11,7 +11,7 @@ import random
 import os
 import sys
 
-DIR_DATA = "data/oboobs"
+DIR_DATA = "data/nsfw"
 SETTINGS = DIR_DATA+"/settings.json"
 DEFAULT = {"nsfw_channels": ["133251234164375552"], "invert" : False, "nsfw_msg": True, "last_update": 0,  "ama_boobs": 10548, "ama_ass": 4542}# Red's testing chan. nsfw content off by default.
 
@@ -152,7 +152,7 @@ class Nsfw:
     @checks.admin_or_permissions(manage_server=True)
     @_nsfw.command(pass_context=True, no_pm=True)
     async def togglemsg(self, ctx):
-        """Enable/Disable the oboobs nswf not allowed message
+        """Enable/Disable nsfw not allowed message
         Admin/owner restricted."""
         # Toggle
         if self.settings["nsfw_msg"]:
