@@ -39,7 +39,7 @@ class Nsfw:
         self.bot = bot
         self.settings = dataIO.load_json(SETTINGS)
 
-    @commands.group(name="oboobs", pass_context=True)
+    @commands.group(name="nsfw", pass_context=True)
     async def _nsfw(self, ctx):
         """The Nsfw cog."""
         if ctx.invoked_subcommand is None:
