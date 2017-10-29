@@ -12,7 +12,7 @@ class Pat:
         author = context.message.author.mention
         mention = member.mention
         
-        pats = "**{0} pats {1}!**"
+        pat = "**{0} pats {1}!**"
         
         choices = [
     	"http://i.imgur.com/IiQwK12.gif", 
@@ -37,7 +37,7 @@ class Pat:
         
         image = random.choice(choices)
         
-        embed = discord.Embed(description=pats.format(author, mention), colour=discord.Colour.blue())
+        embed = discord.Embed(description=pat.format(author, mention), colour=discord.Colour.blue())
         embed.set_image(url=image)
 
         await self.bot.say(embed=embed)
