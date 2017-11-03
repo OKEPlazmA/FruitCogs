@@ -1,0 +1,9 @@
+{
+    "AUTHOR" : "OKE PlazmA",
+    "INSTALL_MSG" : "Thanks for installing my cog. \n.help embedhelp to start using the cog.",
+    "NAME" : "embedhelp",
+    "SHORT" : "just a help message embedded.",
+    "REQUIREMENTS" : [],
+    "TAGS" : ["help"],
+    "DESCRIPTION" : "a help message embedded."
+}
