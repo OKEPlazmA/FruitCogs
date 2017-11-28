@@ -53,7 +53,7 @@ class Help:
             toggle = self.riceCog['toggle']
         if not command:
             msg = "**Command list:**"
-            color = 0xD2B48C
+            color = 0x010101
 
 
             final_coms = {}
@@ -131,16 +131,16 @@ class Help:
                                                 embed=em)
                 await self.bot.send_message(ctx.message.author,
                                         "Spoopy, the discord bot that does stuff because reasons. "
-                                        "Made by OKE PlazmA, helped by it's community.")
+                                        "Made by OKE PlazmA and his minions.")
             elif toggle == 'no_dm':
                 for em in to_send:
                     await self.bot.say(embed=em)
                 await self.bot.say("Spoopy, the discord bot that does stuff because reasons. "
-                                   "Made by OKE PlazmA, helped by it's community.")
+                                   "Made by OKE PlazmA and his minions.")
 
         else:
             msg = "**Command Help:**"
-            color = 0xD2B48C
+            color = 0x010101
 
             em=discord.Embed(description=msg,
                              color=color)
