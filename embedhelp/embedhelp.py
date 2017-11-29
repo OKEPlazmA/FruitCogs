@@ -130,12 +130,12 @@ class Help:
                     await self.bot.send_message(ctx.message.author,
                                                 embed=em)
                 await self.bot.send_message(ctx.message.author,
-                                        "Spoopy, the discord bot that does stuff because reasons. "
+                                        "Drip, the discord bot that does stuff because reasons. "
                                         "Made by OKE PlazmA and his minions.")
             elif toggle == 'no_dm':
                 for em in to_send:
                     await self.bot.say(embed=em)
-                await self.bot.say("Spoopy, the discord bot that does stuff because reasons. "
+                await self.bot.say("Drip, the discord bot that does stuff because reasons. "
                                    "Made by OKE PlazmA and his minions.")
 
         else:
